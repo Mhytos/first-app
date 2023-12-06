@@ -8,4 +8,5 @@
     <!-- Hier werden die infos aus home.component.ts geholt und dann eingefügt, damit auf der angezeigten Seite alle Infos angezeigt werden-->
     <h2 class="listing-heading">{{ housingLocation.name }}</h2>
     <p class="listing-location">{{ housingLocation.city }}, {{ housingLocation.state }}</p>
+    <a [routerLink]="['/details', housingLocation.id]">Learn More</a>
   </section>
